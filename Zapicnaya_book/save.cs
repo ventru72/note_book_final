@@ -12,7 +12,8 @@ namespace Zapicnaya_book
   /// </summary>
     internal struct save
     {
-        public int count1;
+        public int count1      
+            public int count21;
         //public int number_index=1;
         /// <summary>
         ///  метод - Заполнение массива и запись в файл.
