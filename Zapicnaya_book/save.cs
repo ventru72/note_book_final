@@ -230,7 +230,7 @@ namespace Zapicnaya_book
             ConsoleKey key_w = new ConsoleKey();
             while (key_w != ConsoleKey.Enter)
             {
-                using (StreamWriter sw = new StreamWriter(adres_field, true, Encoding.UTF8))
+                using (StreamWriter sw = new StreamWriter(adres_field, false, Encoding.UTF8))
             {
                     Console.WriteLine($"Выбирите запись которую нужно отредактировать.");
 
@@ -408,7 +408,7 @@ namespace Zapicnaya_book
                 }
                 return a.Number.CompareTo(b.Number);
         }
-            using (StreamWriter sw = new StreamWriter(adres_field, true, Encoding.UTF8))
+            using (StreamWriter sw = new StreamWriter(adres_field, false, Encoding.UTF8))
                 {
                 list_Book.list.Sort(ComparerForAge);
 
